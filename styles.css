@@ -11,7 +11,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: greenyellow;
+    background-color: white
 }
 
 li {
@@ -24,7 +24,7 @@ a {
 }
 
 .container {
-   width: 1600px;
+   width: 100%;
    margin: auto; 
 }
 
@@ -49,7 +49,19 @@ a {
 }
 
 .nav-branding {
-    font-size: 2rem;
+    display: flex;
+    gap: 9px;
+}
+.nav-branding-box {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    align-self: center;
+    font-weight: 900;
+}
+.nav-branding-logo {
+    width: auto;
+    max-width: 100%;
 }
 
 .hamburger {
@@ -66,14 +78,28 @@ a {
     background-color: black;
 }
 
-#home {
-    margin-top: 70px;
+.hero {
+    background-image: url("/photos/green-grass.jpg");
+    background-size: cover;
+    height: 100vh;
 }
 
-
-@media(max-width:1600px){
+@media(max-width: 2000px){
     .container {
         width: 100%;
+    }
+    .subcontainer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .nav-branding {
+        font-size: 1.7rem;
+    }
+    .nav-link {
+        font-size: 1.4rem;
+    }
+    .nav-branding-logo {
+        max-height: 65px;
     }
 }
 
@@ -91,7 +117,10 @@ a {
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
-
+    .subcontainer {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -103,12 +132,16 @@ a {
         text-align: center;
         transition: 0.3s;
     }
-
     .nav-item {
         margin: 16px 0;
     }
-
     .nav-menu.active {
         left: 0;
+    }
+    .nav-branding {
+        font-size: .9rem;
+    }
+    .nav-branding-logo {
+        max-height: 30px;
     }
 }
