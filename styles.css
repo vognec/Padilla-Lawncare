@@ -85,6 +85,7 @@ a {
     background-image: url(/photos/green-grass.jpg);
     background-size: cover;
     height: 100vh;
+    background-color: none;
 }
 
 @media(max-width: 2000px){
