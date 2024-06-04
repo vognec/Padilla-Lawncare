@@ -27,11 +27,13 @@ a {
 .container {
    width: 100%;
    margin: auto; 
+   padding-top: 20px;
+   padding-bottom: 20px; 
 }
 
 .subcontainer {
     width: 85%;
-    margin: auto;
+    margin: auto;   
 }
 
 .navbar {
@@ -89,10 +91,6 @@ a {
     .container {
         width: 100%;
     }
-    .subcontainer {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
     .nav-branding {
         font-size: 1.7rem;
     }
@@ -143,6 +141,6 @@ a {
         font-size: .9rem;
     }
     .nav-branding-logo {
-        max-height: 30px;
+        max-height: 40px;
     }
 }
