@@ -78,14 +78,14 @@ a {
     height: 3px;
     margin: 5px 0;
     transition: all 0.3s ease;
-    background-color: black;
+    background-color: #0BDA51;
 }
 
 .hero {
     background-image: url(/photos/green-grass.jpg);
     background-size: cover;
     height: 100vh;
-    background-color: none;
+
 }
 
 @media(max-width: 2000px){
