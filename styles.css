@@ -82,6 +82,7 @@ a {
 }
 
 .hero {
+    background-color: transparent;
     background-image: url(/photos/green-grass.jpg);
     background-size: cover;
     height: 100vh;
@@ -124,10 +125,10 @@ a {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 110px;
         gap: 0;
         flex-direction: column;
-        background-color: greenyellow;
+        background-color: #0BDA51;
         width: 100%;
         text-align: center;
         transition: 0.3s;
