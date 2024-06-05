@@ -126,7 +126,7 @@ a {
         position: fixed;
         left: -100%;
         top: 110px;
-        gap: 1.2rem;
+        gap: 3rem;
         flex-direction: column;
         background-color: #0BDA51;
         width: 100%;
