@@ -83,12 +83,12 @@ a {
 }
 
 .hero {
-    background-image: url(../photos/green-grass.jpg);
+    background-image: url("../photos/green-grass.jpg");
     background-size: cover;
     height: 100vh;
 }
 
-@media(max-width: 2000px){
+@media(max-width: 4000px){
     .container {
         width: 100%;
     }
