@@ -4,8 +4,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --hunter-green: #355E3B;
+}
 body{
-    background-color: #0BDA51;
+    background-color: var(--hunter-green);
 }
 
 .flex-container {
@@ -60,18 +63,18 @@ a {
 
 .nav-branding {
     display: flex;
-    gap: 9px;
+    gap: 5px;
 }
 .nav-branding-box {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: center;
     align-self: center;
     font-weight: 900;
     font-family: "Source Sans 3";
 }
 .nav-branding-logo {
-    width: auto;
+    height: auto;
     max-width: 100%;
 }
 
@@ -86,7 +89,7 @@ a {
     height: 3px;
     margin: 5px 0;
     transition: all 0.3s ease;
-    background-color: #0BDA51;
+    background-color: var(--hunter-green);
 }
 
 
@@ -98,6 +101,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .hero {
@@ -110,17 +114,69 @@ a {
     text-align: center;
 }
 
-.hero-text-box {
+
+main {
+    background: #FFFFFF;
+}
+
+.hero-text-box,
+.company-text,
+.promotion-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     align-self: center;
     font-weight: 900;
     font-family: "Source Sans 3";
-    font-size: 2em;
 }
 
+.hero-text-box{
+    font-size: 2.2em;
+}
 
+.company-text {
+    font-size: 2em;
+    padding: 1em 0;
+    color: var(--hunter-green);
+}
+.promotion-text{
+    font-size: 1.8em;
+    color: var(--hunter-green);
+}
+
+.service-text {
+    text-align: center;
+    padding: 1em 0;
+    color: var(--hunter-green);
+}
+
+.service-description-text {
+    text-align: center;
+    padding: 0 1em;
+}
+
+.action {
+    background-image: url("photos/tree.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    text-align: center;
+    padding-bottom: 2em;
+}
+.action-text {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    color: #FFFFFF;
+}
+
+.action-button {
+    padding: 1em;
+}
 @media(max-width: 4000px){
     .container {
         width: 100%;
@@ -162,7 +218,7 @@ a {
         top: 110px;
         gap: 3rem;
         flex-direction: column;
-        background-color: #0BDA51;
+        background-color: var(--hunter-green);
         width: 100%;
         min-height: 100vh;
         justify-content: flex-start;
