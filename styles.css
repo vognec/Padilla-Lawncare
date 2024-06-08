@@ -33,6 +33,9 @@ a {
     text-decoration: none;
 }
 
+.lock-scroll {
+    overflow: hidden;
+}
 .container {
    width: 100%;
    margin: auto; 
