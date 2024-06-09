@@ -203,6 +203,27 @@ main {
 .p-padding {
     padding-bottom: 2em;
 }
+
+footer {
+    background: #FFFFFF;
+    font-family: "Source Sans 3";
+    text-align: center;
+    padding: 1em;
+}
+
+.footer-contact {
+    color: var(--hunter-green);
+    padding-bottom: 1.2em;
+    font-weight: 900;
+}
+
+.footer-contact-info {
+    padding-bottom: 0.5em;
+}
+
+.footer-copyright {
+    padding-top: .5em;
+}
 @media(max-width: 4000px){
     .container {
         width: 100%;
@@ -242,11 +263,13 @@ main {
         left: -100%;
         top: 110px;
         gap: 3rem;
+        display: flex;
         flex-direction: column;
         background-color: var(--hunter-green);
         width: 100%;
         min-height: 100vh;
         justify-content: flex-start;
+        align-items: center;
         text-align: center;
         transition: 0.3s;
         padding-top: 5rem;
@@ -262,6 +285,15 @@ main {
     }
     .nav-branding-logo {
         max-height: 40px;
+    }
+    .footer-contact {
+        font-size: 1.4em;
+    }
+    .footer-contact-info {
+        font-size: 1em;
+    }
+    .footer-copyright {
+        font-size: .7em;
     }
 }
 @media(min-width:650px){
