@@ -136,16 +136,16 @@ main {
 }
 
 .hero-text-box{
-    font-size: 2.2em;
+    font-size: 2.4em;
 }
 
 .company-text {
-    font-size: 2em;
+    font-size: 2.0em;
     padding: 1em 0;
     color: var(--hunter-green);
 }
 .promotion-text{
-    font-size: 1.8em;
+    font-size: 1.5em;
     color: var(--hunter-green);
 }
 
@@ -157,9 +157,10 @@ main {
 }
 
 .service-description-text {
-    text-align: center;
-    padding: 0 1em;
+    text-align: justify;
+    padding: 0 2em;
     font-family: "Source Sans 3";
+    font-size: 1.2rem;
 }
 
 .action {
@@ -215,14 +216,32 @@ footer {
     color: var(--hunter-green);
     padding-bottom: 1.2em;
     font-weight: 900;
+    font-size: 3em;
 }
 
 .footer-contact-info {
     padding-bottom: 0.5em;
+    font-size: 1.7em;
 }
 
 .footer-copyright {
     padding-top: .5em;
+    font-size: 1em;
+}
+
+.item-one {
+    grid-column-start: 1;
+}
+.item-two {
+    grid-column-start: 2;
+}
+.item-three {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+.item-four {
+    grid-column-start: 2;
+    grid-row-start: 2;
 }
 @media(max-width: 4000px){
     .container {
@@ -237,7 +256,6 @@ footer {
     .nav-branding-logo {
         max-height: 65px;
     }
-    
 }
 
 @media(max-width:1024px){
@@ -298,41 +316,111 @@ footer {
 }
 @media(min-width:650px){
     .hero-text-box{
-        font-size: 2.4em;
+        font-size: 2.6em;
+    }
+    .company-text {
+        font-size: 2.2em;
+    }
+    .promotion-text{
+        font-size: 1.6em;
+    }
+    .action-text {
+        font-size: 2em;
+    }
+}
+@media(min-width:750px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .service-text{
+        font-size: 3em;
+    }
+    .service-description-text{
+        font-size: 2rem;
+    }
+    .action-button {
+        font-size: 1.5em;
     }
 }
 @media(min-width:850px){
     .hero-text-box{
-        font-size: 2.8em;
+        font-size: 3em;
     }
+    .company-text {
+        font-size: 2.4em;
+    }
+    .promotion-text{
+        font-size: 1.8em;
+    }
+
 }
 @media(min-width:1050px){
     .hero-text-box{
+        font-size: 3.5em;
+    }
+    .company-text {
         font-size: 3em;
+    }
+    .promotion-text{
+        font-size: 2em;
     }
 }
 @media(min-width:1250px){
     .hero-text-box{
+        font-size: 4em;
+    }
+    .company-text {
         font-size: 3.2em;
+    }
+    .promotion-text{
+        font-size: 2.2em;
     }
 }
 @media(min-width:1450px){
     .hero-text-box{
+        font-size: 4.5em;
+    }
+    .company-text {
         font-size: 3.5em;
+    }
+    .promotion-text{
+        font-size: 2.4em;
     }
 }
 @media(min-width:1650px){
     .hero-text-box{
-        font-size: 4.5em;
+        font-size: 5em;
+    }
+    .company-text {
+        font-size: 4.0em;
+    }
+    .promotion-text{
+        font-size: 2.8em;
     }
 }
 @media(min-width:1850px){
     .hero-text-box{
-        font-size: 5em;
+        font-size: 5.5em;
+    }
+    .company-text {
+        font-size: 4.5em;
+    }
+    .promotion-text{
+        font-size: 2.9em;
     }
 }
 @media(min-width:2000px){
     .hero-text-box{
         font-size: 6em;
+    }
+    .company-text {
+        font-size: 5.0em;
+    }
+    .promotion-text{
+        font-size: 3em;
+    }
+    .action-text {
+        font-size: 4em;
     }
 }
