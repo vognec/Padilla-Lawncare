@@ -214,9 +214,9 @@ footer {
 
 .footer-contact {
     color: var(--hunter-green);
-    padding-bottom: 1.2em;
+    padding-bottom: 1em;
     font-weight: 900;
-    font-size: 3em;
+    font-size: 2.7em;
 }
 
 .footer-contact-info {
@@ -324,9 +324,7 @@ footer {
     .promotion-text{
         font-size: 1.6em;
     }
-    .action-text {
-        font-size: 2em;
-    }
+
 }
 @media(min-width:750px){
     .grid-container {
@@ -341,6 +339,9 @@ footer {
     }
     .action-button {
         font-size: 1.5em;
+    }
+    .action-text {
+        font-size: 3em;
     }
 }
 @media(min-width:850px){
