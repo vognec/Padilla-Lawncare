@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 :root {
@@ -243,6 +244,70 @@ footer {
     grid-column-start: 2;
     grid-row-start: 2;
 }
+.box-wrap {
+    position: absolute;
+    padding: 2em;
+    width: 100%;
+
+    display: flex;
+
+
+    border: 1px solid red;
+    justify-content: center;
+
+}
+.form-wrapper {
+
+    background: #FFFFFF;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px rgba(254, 236, 164, 1);
+    font-family: "Source Sans 3";
+}
+.form-wrapper h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.form-wrapper .input-field{
+    margin-bottom: 10px;
+}
+.form-wrapper
+.input-field
+input[type="text"],
+.form-wrapper textarea{
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    padding: 10px;
+}
+.form-wrapper textarea{
+    resize: none;
+    height: 80px;
+}
+.form-wrapper .btn input[type="submit"]{
+    border: 0px;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background: var(--hunter-green);
+    color: #fcfbf7;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+}
+#error-message {
+    margin-bottom: 20px;
+    background: #fe8b8e;
+    padding: 0px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
+
 @media(max-width: 4000px){
     .container {
         width: 100%;
@@ -255,6 +320,9 @@ footer {
     }
     .nav-branding-logo {
         max-height: 65px;
+    }
+    .box-wrap {
+        top: 118px;
     }
 }
 
@@ -312,6 +380,9 @@ footer {
     }
     .footer-copyright {
         font-size: .7em;
+    }
+    .box-wrap {
+        top: 110px;
     }
 }
 @media(min-width:650px){
