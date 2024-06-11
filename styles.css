@@ -246,18 +246,13 @@ footer {
 }
 .box-wrap {
     position: absolute;
-    padding: 2em;
+    bottom: 0; 
     width: 100%;
-
     display: flex;
-
-
-    border: 1px solid red;
     justify-content: center;
-
+    align-items: center;
 }
 .form-wrapper {
-
     background: #FFFFFF;
     padding: 1em;
     border-radius: 5px;
