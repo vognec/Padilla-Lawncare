@@ -54,18 +54,19 @@
             <div id="error-message">
     
             </div>
-            <form action="" id="myform" onsubmit="return validate();">
+            <form action="https://api.web3forms.com/submit" method="POST" id="myform" onsubmit="return validate();">
+                <input type="hidden" name="access_key" value="afe0bddf-7f8e-42e7-81ac-6b96a98e2bfd">
                 <div class="input-field">
-                    <input type="text" placeholder="Name" id="name">
+                    <input type="text" placeholder="Name" id="name" name="client_name">
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Phone" id="phone">
+                    <input type="text" placeholder="Phone" id="phone" name="client_phone">
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email" id="email">
+                    <input type="text" placeholder="Email" id="email" name="client_email">
                 </div>
                 <div class="input-field">
-                    <textarea placeholder="Message" id="message"></textarea>
+                    <textarea placeholder="Message" id="message" name="client_msg"></textarea>
                 </div>
                 <div class="btn">
                     <input type="submit">

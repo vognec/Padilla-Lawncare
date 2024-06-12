@@ -31,8 +31,7 @@ function validate() {
     let email = document.getElementById("email").value;
     let message = document.getElementById("message").value;
     let error_message = document.getElementById("error-message");
-    
-    error_message.style.padding = "10px"
+
 
     let errors = [];
 
@@ -47,11 +46,11 @@ function validate() {
     }
 
     if (errors.length > 0){
+        error_message.style.padding = "10px"
         error_message.innerHTML = errors.join("<br>");
         return false;
     }
     else {
-        alert("Form Submitted Successfully!");
         return true;
     }
 }
