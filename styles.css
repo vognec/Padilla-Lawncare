@@ -244,29 +244,35 @@ footer {
     grid-column-start: 2;
     grid-row-start: 2;
 }
+
 .box-wrap {
     position: absolute;
     bottom: 0; 
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-.form-wrapper {
-    background: #FFFFFF;
-    padding: 1em;
-    border-radius: 5px;
-    box-shadow: 4px 4px 2px rgba(254, 236, 164, 1);
-    font-family: "Source Sans 3";
-}
-.form-wrapper h2 {
+    align-items: center; 
     text-align: center;
-    margin-bottom: 20px;
-    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: "Source Sans 3"; 
+}
+.box-wrap h1 {
+    font-size: 3em;
     letter-spacing: 3px;
 }
+.form-wrapper {
+    background: var(--hunter-green);
+    padding: 1em;
+    border-radius: 5px;
+    font-family: "Source Sans 3";
+    width: 100%;
+    max-width: 800px;
+}
+
 .form-wrapper .input-field{
     margin-bottom: 10px;
+    color: var(--hunter-green);
 }
 .form-wrapper
 .input-field
@@ -275,6 +281,7 @@ input[type="text"],
     border: 1px solid #e0e0e0;
     width: 100%;
     padding: 10px;
+    flex: 1;
 }
 .form-wrapper textarea{
     resize: none;
@@ -285,9 +292,9 @@ input[type="text"],
     margin-top: 15px;
     padding: 10px;
     text-align: center;
-    width: 100%;
-    background: var(--hunter-green);
-    color: #fcfbf7;
+    width: 60%;
+    background: #FFFFFF;
+    color: var(--hunter-green);
     text-transform: uppercase;
     letter-spacing: 5px;
     font-weight: bold;
@@ -299,10 +306,14 @@ input[type="text"],
     background: #fe8b8e;
     padding: 0px;
     text-align: center;
-    font-size: 14px;
+    font-size: 1em;
     transition: all 0.5s ease;
 }
-
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 @media(max-width: 4000px){
     .container {
         width: 100%;
@@ -319,6 +330,7 @@ input[type="text"],
     .box-wrap {
         top: 118px;
     }
+
 }
 
 @media(max-width:1024px){
@@ -378,6 +390,14 @@ input[type="text"],
     }
     .box-wrap {
         top: 110px;
+    }
+}
+@media(min-width:1024px){
+    .form-wrapper h2 {
+        font-size: 2em;
+    }
+    #error-message {
+        font-size: 1.2em;
     }
 }
 @media(min-width:650px){
