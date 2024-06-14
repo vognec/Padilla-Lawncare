@@ -314,6 +314,28 @@ form {
     flex-direction: column;
     width: 100%;
 }
+.main-padding {
+    margin-top: 110px;
+    padding: 4em 0;
+    background-color: var(--hunter-green);
+    display: flex;
+    justify-content: center;
+}
+.image-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1em;
+    max-width: 780px;
+}
+
+.flex-item img {
+    border-radius: 1em;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 3px 10px rgb(0,0,0,.4);
+}
+
 @media(max-width: 4000px){
     .container {
         width: 100%;
@@ -399,7 +421,17 @@ form {
     #error-message {
         font-size: 1.2em;
     }
+    .image-flexbox {
+        max-width: 1375px;
+      
+    }
+    .flex-item img {
+        width: 500px;
+        height: 500px;
+    }
 }
+
+
 @media(min-width:650px){
     .hero-text-box{
         font-size: 2.6em;
@@ -410,7 +442,6 @@ form {
     .promotion-text{
         font-size: 1.6em;
     }
-
 }
 @media(min-width:750px){
     .grid-container {
