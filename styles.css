@@ -8,10 +8,14 @@
 :root {
     --hunter-green: #355E3B;
 }
+
 body{
     background-color: var(--hunter-green);
+    padding-top: 110px;
 }
-
+.body-padding {
+    padding-top: 110px;
+}
 .flex-container {
     height: 100vh;
     display: flex;
@@ -120,7 +124,19 @@ a {
     text-align: center;
 }
 
-
+.work-hero {
+    background-image: url("photos/work-s-hero.jpg");
+    padding-top: 250px;
+    padding-bottom: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+} 
+.work-hero h1 {
+    font-size: 6em;
+    color: #FFFFFF;
+    font-family: "Source Sans 3";
+}
 main {
     background: #FFFFFF;
 }
@@ -211,6 +227,7 @@ footer {
     font-family: "Source Sans 3";
     text-align: center;
     padding: 1em;
+    width: 100%;
 }
 
 .footer-contact {
@@ -244,10 +261,16 @@ footer {
     grid-column-start: 2;
     grid-row-start: 2;
 }
-
+.flex-wrapper {
+    display: flex;
+    min-height: 100svh;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 .box-wrap {
-    position: absolute;
-    bottom: 0; 
+    flex: 1;
+    padding-top: 2em;
+    padding-bottom: 2em;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -314,8 +337,7 @@ form {
     flex-direction: column;
     width: 100%;
 }
-.main-padding {
-    margin-top: 110px;
+.main-container {
     padding: 4em 0;
     background-color: var(--hunter-green);
     display: flex;

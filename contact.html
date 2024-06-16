@@ -15,7 +15,6 @@
         <div class="container">
             <div class="subcontainer">
                 <nav class="navbar">
-
                     <a href="index.html" class="nav-branding">
                         <img class="nav-branding-logo" src="photos/logo.png" alt="green grass logo">
                         <div class="nav-branding-box">
@@ -23,7 +22,6 @@
                             <span>& Tree Service</span>
                         </div>
                     </a>
-                    
                     <ul class="nav-menu">
                         <li class="nav-item">
                             <a href="services.html" class="nav-link">Services</a>
@@ -44,35 +42,39 @@
             </div>
         </div>
     </header>
-    
-    <div class="box-wrap">
-        <h1>Contact Us</h1>
-        <div class="form-wrapper">
-            <div id="error-message">
-    
+    <div class="flex-wrapper">
+        <div class="box-wrap">
+            <h1>Contact Us</h1>
+            <div class="form-wrapper">
+                <div id="error-message">
+                </div>
+                <form action="https://api.web3forms.com/submit" method="POST" id="myform" onsubmit="return validate();">
+                    <input type="hidden" name="access_key" value="afe0bddf-7f8e-42e7-81ac-6b96a98e2bfd">
+                    <div class="input-field">
+                        <input type="text" placeholder="Name" id="name" name="client_name">
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Phone" id="phone" name="client_phone">
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Email" id="email" name="client_email">
+                    </div>
+                    <div class="input-field">
+                        <textarea placeholder="Message" id="message" name="client_msg"></textarea>
+                    </div>
+                    <div class="btn">
+                        <input type="submit">
+                    </div>
+                </form>
             </div>
-            <form action="https://api.web3forms.com/submit" method="POST" id="myform" onsubmit="return validate();">
-                <input type="hidden" name="access_key" value="afe0bddf-7f8e-42e7-81ac-6b96a98e2bfd">
-                <div class="input-field">
-                    <input type="text" placeholder="Name" id="name" name="client_name">
-                </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Phone" id="phone" name="client_phone">
-                </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Email" id="email" name="client_email">
-                </div>
-                <div class="input-field">
-                    <textarea placeholder="Message" id="message" name="client_msg"></textarea>
-                </div>
-                <div class="btn">
-                    <input type="submit">
-                </div>
-            </form>
         </div>
-
+        <footer>
+            <h3 class="footer-contact">Contact Us</h3>
+            <p class="footer-contact-info">(210) 789-3037</p>
+            <p class="footer-contact-info">abelpadillalawncare@gmail.com</p>
+            <p class="footer-copyright">© 2024 Padilla Lawn Care & Tree Service</p>
+        </footer>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
