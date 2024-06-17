@@ -360,7 +360,7 @@ form {
 
 .card-content {
     text-align: center;
-    padding: 1.5em;
+    padding: 1em;
 }
 .card-content p {
     font-family: "Source sans 3";
@@ -455,23 +455,7 @@ form {
         top: 110px;
     }
 }
-@media(min-width:1024px){
-    .form-wrapper h2 {
-        font-size: 2em;
-    }
-    #error-message {
-        font-size: 1.2em;
-    }
-    .image-flexbox {
-        max-width: 1375px;
-      
-    }
-    .flex-item img,
-    .flex-item-services {
-        width: 500px;
-        height: 500px;
-    }
-}
+
 @media(min-width:650px){
     .hero-text-box{
         font-size: 2.6em;
@@ -513,6 +497,14 @@ form {
     }
 
 }
+@media(min-width:1024px){
+    .form-wrapper h2 {
+        font-size: 2em;
+    }
+    #error-message {
+        font-size: 1.2em;
+    }
+}
 @media(min-width:1050px){
     .hero-text-box{
         font-size: 3.5em;
@@ -524,6 +516,7 @@ form {
         font-size: 2em;
     }
 }
+
 @media(min-width:1250px){
     .hero-text-box{
         font-size: 4em;
@@ -533,6 +526,18 @@ form {
     }
     .promotion-text{
         font-size: 2.2em;
+    }
+    .image-flexbox {
+        max-width: 1375px;
+      
+    }
+    .flex-item img,
+    .flex-item-services {
+        width: 500px;
+        height: 500px;
+    }
+    .card-content {
+        padding: 1.5em;
     }
 }
 @media(min-width:1450px){
