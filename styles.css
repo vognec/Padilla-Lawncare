@@ -174,7 +174,7 @@ main {
 }
 
 .service-description-text {
-    text-align: justify;
+    text-align: left;
     padding: 0 2em;
     font-family: "Source Sans 3";
     font-size: 1.2rem;
