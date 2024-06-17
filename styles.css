@@ -347,15 +347,36 @@ form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 1em;
+    gap: 4em;
     max-width: 780px;
 }
 
-.flex-item img {
+.flex-item-img {
     border-radius: 1em;
     width: 250px;
     height: 250px;
     box-shadow: 0 3px 10px rgb(0,0,0,.4);
+}
+
+.card-content {
+    text-align: center;
+    padding: 1.5em;
+}
+.card-content p {
+    font-family: "Source sans 3";
+    font-size: 1.5em;
+    color: var(--hunter-green);
+    font-weight: 900;
+}
+.services {
+    background: #FFFFFF;
+    border-radius: 1em;
+}
+.flex-item-services {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    width: 250px;
+    height: 250px;
 }
 
 @media(max-width: 4000px){
@@ -376,12 +397,10 @@ form {
     }
 
 }
-
 @media(max-width:1024px){
     .hamburger {
         display: block;
     }
-
     .hamburger.active .bar:nth-child(2){
         opacity: 0;
     }
@@ -447,13 +466,12 @@ form {
         max-width: 1375px;
       
     }
-    .flex-item img {
+    .flex-item img,
+    .flex-item-services {
         width: 500px;
         height: 500px;
     }
 }
-
-
 @media(min-width:650px){
     .hero-text-box{
         font-size: 2.6em;
