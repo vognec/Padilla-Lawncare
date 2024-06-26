@@ -15,6 +15,7 @@ module.exports = {
       },
       backgroundImage: {
         'hero-pattern': "url('/build/img/green-grass.jpg')",
+        'call-action': "url('/build/img/grass-action.jpg')",
       },
       screens: {
         'widescreen': {'raw': '(min-aspect-ratio: 3/2)'},

@@ -12,7 +12,7 @@
         <section class="max-w-6xl mx-auto flex justify-between p-4 items-center">
             <div class="flex">
                 <a href=""><p class="text-3xl">🌳</p></a>
-                <a href=""><h1 class="text-lg font-black text-hunter-green text-center">Padilla's Lawn Care <br>
+                <a href=""><h1 class="text-xl font-black text-hunter-green text-center md:text-2xl">Padilla's Lawn Care <br>
                     & Tree Service</h1></h1></a>
             </div>
             <div>
@@ -21,14 +21,14 @@
                     before:rounded before:absolute before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500 after:content-[''] after:bg-hunter-green
                     after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500"></div>
                 </button>
-                <nav class="hidden md:block space-x-8 text-xl text-hunter-green font-medium" aria-label="main">
-                    <a href="#" class="hover:opacity-90">Services</a>
+                <nav class="hidden md:block space-x-8 text-xl text-hunter-green font-black md:text-2xl" aria-label="main">
+                    <a href="#" class="hover:opacity-90 text-">Services</a>
                     <a href="#" class="hover:opacity-90">Our Work</a>
                     <a href="#" class="hover:opacity-90">Contact</a>
                 </nav>
             </div>
         </section>
-        <section id="mobile-menu" class="absolute top-68 bg-hunter-green text-white w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden">
+        <section id="mobile-menu" class="absolute top-68 bg-hunter-green text-white w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden font-black">
             <nav class="flex flex-col items-center min-h-screen py-8" aria-label="mobile">
                 <a href="#" class="w-full text-center py-6 hover:opacity-90">Services</a>
                 <a href="#" class="w-full text-center py-6 hover:opacity-90">Our Work</a>
@@ -46,29 +46,46 @@
             </div>
         </section>
         <section class="flex flex-col justify-center items-center text-center px-6 py-10 text-hunter-green max-w-6xl m-auto">
-            <h3 class="text-3xl font-bold sm:text-4xl lg:text-5xl pb-8">Padilla's Lawn Care <br>
+            <h3 class="text-3xl font-black sm:text-4xl lg:text-5xl pb-8">Padilla's Lawn Care <br>
                 & Tree Service</h3>
             <hr class="mx-auto bg-black w-1/2 max-w-40" />
-            <p class="text-2xl pt-8 pb-8 font-medium sm:text-3xl lg:text-4xl">San Antonio's #1 <br>
+            <p class="text-2xl pt-8 pb-8 font-extrabold sm:text-3xl lg:text-4xl">San Antonio's #1 <br>
                 Choice For Lawncare</p>
             <hr class="mx-auto bg-black w-1/2 max-w-40" />
             <div class="flex flex-col justify-center items-center sm:flex-row sm:gap-32">
                 <div>
-                    <h4 class="text-xl sm:text-2xl lg:text-3xl font-medium pb-3 pt-8">Lawn Care Services</h4>
+                    <h4 class="text-xl sm:text-2xl lg:text-3xl font-bold pb-3 pt-8">Lawn Care Services</h4>
                     <div>
-                        <p class="pb-5 text-left text-lg lg:text-xl">Our lawn maintenance services ensure your yard looks pristine and healthy year-round. We offer professional grass cutting to keep your lawn neat and well-manicured, promoting healthy growth and a lush appearance. Our grass removal and installation services provide you with a fresh start, whether you need to replace a patchy lawn or install a new one. With our expert care, your lawn will be the envy of the neighborhood.</p>
+                        <p class="pb-5 text-left text-lg lg:text-xl font-normal">Our lawn maintenance services ensure your yard looks pristine and healthy year-round. We offer professional grass cutting to keep your lawn neat and well-manicured, promoting healthy growth and a lush appearance. Our grass removal and installation services provide you with a fresh start, whether you need to replace a patchy lawn or install a new one. With our expert care, your lawn will be the envy of the neighborhood.</p>
                     </div>
                 </div>
                 <div>
-                    <h4 class="text-xl sm:text-2xl lg:text-3xl font-medium pb-3">Our Tree Services</h4>
+                    <h4 class="text-xl sm:text-2xl lg:text-3xl font-bold pb-3">Our Tree Services</h4>
                     <div>
-                        <p class="pb-5 text-left text-lg lg:text-xl">Our comprehensive tree services cater to all your tree care needs. We specialize in tree trimming to maintain the health and aesthetics of your trees, ensuring they grow strong and beautiful. Our tree removal service is safe and efficient, handling everything from small tree
+                        <p class="pb-5 text-left text-lg lg:text-xl font-normal">Our comprehensive tree services cater to all your tree care needs. We specialize in tree trimming to maintain the health and aesthetics of your trees, ensuring they grow strong and beautiful. Our tree removal service is safe and efficient, handling everything from small tree
                         removals to large, hazardous trees. Trust us to enhance your landscape while prioritizing the safety and health of your property.</p>
                     </div>
                 </div>
             </div>
-
+        </section>
+        <section class="bg-call-action bg-cover bg-center relative min-h-60">
+            <div class="absolute inset-0 bg-gray-700 opacity-40"></div>
+            <div class="absolute inset-0 flex flex-col gap-6 items-center justify-center">
+                <h5 class="text-center text-white text-2xl font-extrabold sm:text-3xl lg:text-4xl">Want To Know More About Our Services?
+                </h5>
+                <a class="bg-white text-center text-hunter-green p-3 w-72 font-extrabold rounded-3xl inline-block" href="#">Contact Now For Free Estimate</a>
+            </div>
         </section>
     </main>
+    <footer>
+        <section>
+            <address class="flex flex-col text-hunter-green items-center justify-center py-6">
+                <h6 class="font-black text-xl md:text-2xl pb-4">Contact Us</h6>
+                <a class="text-lg md:xl font-bold" href="tel:+17372102363">(737) 210-2363</a>
+                <a class="text-lg md:xl font-bold pb-4" href="mailto:abelpadillalawncare@gmail.com">abelpadillalawncare@gmail.com</a>
+                <p class="text-sm md:text-md font-bold">&copy; 2024 Padilla Lawn Care & Tree Service</p>
+            </address>
+        </section>
+    </footer>
 </body>
 </html>
