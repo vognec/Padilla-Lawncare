@@ -18,7 +18,7 @@ module.exports = {
       },
       screens: {
         'widescreen': {'raw': '(min-aspect-ratio: 3/2)'},
-        'tallscreen': {'raw': '(max-aspect-ratio: 13/20'},
+        'tallscreen': {'raw': '(max-aspect-ratio: 13/20)'},
       },
       colors: {
         'hunter-green': '#355E3B',
