@@ -566,6 +566,10 @@ video {
   position: sticky;
 }
 
+.inset-0 {
+  inset: 0px;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -667,9 +671,32 @@ video {
   border-radius: 0.25rem;
 }
 
+.bg-gray-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
 .bg-green-950 {
   --tw-bg-opacity: 1;
   background-color: rgb(5 46 22 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-hunter-green {
+  --tw-bg-opacity: 1;
+  background-color: rgb(53 94 59 / var(--tw-bg-opacity));
+}
+
+.bg-hero-pattern {
+  background-image: url('/build/img/green-grass.jpg');
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .p-4 {
@@ -693,6 +720,11 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-5xl {
@@ -722,6 +754,15 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-hunter-green {
+  --tw-text-opacity: 1;
+  color: rgb(53 94 59 / var(--tw-text-opacity));
+}
+
+.opacity-30 {
+  opacity: 0.3;
 }
 
 .transition-all {
@@ -790,6 +831,12 @@ video {
   background-color: rgb(5 46 22 / var(--tw-bg-opacity));
 }
 
+.before\:bg-hunter-green::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(53 94 59 / var(--tw-bg-opacity));
+}
+
 .before\:transition-all::before {
   content: var(--tw-content);
   transition-property: all;
@@ -845,6 +892,12 @@ video {
   background-color: rgb(5 46 22 / var(--tw-bg-opacity));
 }
 
+.after\:bg-hunter-green::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(53 94 59 / var(--tw-bg-opacity));
+}
+
 .after\:transition-all::after {
   content: var(--tw-content);
   transition-property: all;
@@ -866,6 +919,13 @@ video {
   opacity: 0.9;
 }
 
+@media (min-width: 640px) {
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:block {
     display: block;
@@ -873,5 +933,12 @@ video {
 
   .md\:hidden {
     display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
