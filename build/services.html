@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body class="bg-hunter-green">
+    <header class="sticky top-0 z-10 bg-white">
+        <section class="max-w-6xl mx-auto flex justify-between p-4 items-center">
+            <div class="flex">
+                <a href="index.html"><p class="text-3xl">🌳</p></a>
+                <a href="index.html"><h1 class="text-xl font-black text-hunter-green text-center md:text-2xl">Padilla's Lawn Care <br>
+                    & Tree Service</h1></h1></a>
+            </div>
+            <div>
+                <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer relative w-8 h-8">
+                    <div class="bg-hunter-green w-8 h-1 rounded absolute top-4 -mt-05 transition-all duration-500 before:content-[''] before:bg-hunter-green before:w-8 before:h-1
+                    before:rounded before:absolute before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500 after:content-[''] after:bg-hunter-green
+                    after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500"></div>
+                </button>
+                <nav class="hidden md:block space-x-8 text-xl text-hunter-green font-black md:text-2xl" aria-label="main">
+                    <a href="services.html" class="hover:opacity-90 text-">Services</a>
+                    <a href="#" class="hover:opacity-90">Our Work</a>
+                    <a href="#" class="hover:opacity-90">Contact</a>
+                </nav>
+            </div>
+        </section>
+        <section id="mobile-menu" class="absolute top-68 bg-hunter-green text-white w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden font-black">
+            <nav class="flex flex-col items-center min-h-screen py-8" aria-label="mobile">
+                <a href="services.html" class="w-full text-center py-6 hover:opacity-90">Services</a>
+                <a href="#" class="w-full text-center py-6 hover:opacity-90">Our Work</a>
+                <a href="#" class="w-full text-center py-6 hover:opacity-90">Contact</a>
+            </nav>
+        </section>
+    </header>
+    <main class="flex justify-center">
+        <section class="my-10 max-w-4xl flex flex-col items-center gap-10 md:flex-row md:flex-wrap md:gap-20 md:justify-center">
+            <div class="w-2/3 max-w-sm bg-white border border-hunter-green rounded-lg shadow">
+                <img class="object-cover" src="img/grass-installation.jpg" alt="Grass installation">
+                <h2 class="text-hunter-green font-bold text-center py-3 text-lg">Grass Installation</h2>
+            </div>
+            <div class="w-2/3 max-w-sm bg-white border border-hunter-green rounded-lg shadow">
+                <img src="img/lawn-care.jpg" alt="Lawn Care">
+                <h2 class="text-hunter-green font-bold text-center py-3 text-lg">Lawn Care</h2>
+            </div>
+            <div class="w-2/3 max-w-sm bg-white border border-hunter-green rounded-lg shadow">
+                <img src="img/tree-trimming.jpg" alt="Tree Trimming">
+                <h2 class="text-hunter-green font-bold text-center py-3 text-lg">Tree Trimming</h2>
+            </div>
+            <div class="w-2/3 max-w-sm bg-white border border-hunter-green rounded-lg shadow">
+                <img src="img/branch-removal.jpg" alt="Branch Removal">
+                <h2 class="text-hunter-green font-bold text-center py-3 text-lg">Branch Removal</h2>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-white">
+        <section>
+            <address class="flex flex-col text-hunter-green items-center justify-center py-6">
+                <h6 class="font-black text-xl md:text-2xl pb-4">Contact Us</h6>
+                <a class="text-lg md:xl font-bold" href="tel:+17372102363">(737) 210-2363</a>
+                <a class="text-lg md:xl font-bold pb-4" href="mailto:abelpadillalawncare@gmail.com">abelpadillalawncare@gmail.com</a>
+                <p class="text-sm md:text-md font-bold">&copy; 2024 Padilla Lawn Care & Tree Service</p>
+            </address>
+        </section>
+    </footer>
+</body>
+</html>
