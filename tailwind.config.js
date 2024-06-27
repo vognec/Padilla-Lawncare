@@ -14,8 +14,8 @@ module.exports = {
         'open-menu': 'open-menu 0.5s ease-in-out forwards',
       },
       backgroundImage: {
-        'hero-pattern': "url('/build/img/green-grass.jpg')",
-        'call-action': "url('/build/img/grass-action.jpg')",
+        'hero-pattern': "url('img/green-grass.jpg')",
+        'call-action': "url('img/grass-action.jpg')",
       },
       screens: {
         'widescreen': {'raw': '(min-aspect-ratio: 3/2)'},
