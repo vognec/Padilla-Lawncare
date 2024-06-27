@@ -8,7 +8,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/tree.ico">
     <script src="js/main.js" defer></script>
 </head>
-<body class="bg-hunter-green">
+<body class="bg-hunter-green min-h-screen flex flex-col">
     <header class="sticky top-0 z-10 bg-white">
         <section class="max-w-6xl mx-auto flex justify-between p-4 items-center">
             <div class="flex">
@@ -37,27 +37,37 @@
             </nav>
         </section>
     </header>
-    <main class="flex justify-center">
-        <section class="my-10 max-w-4xl flex flex-col items-center gap-10 md:flex-row md:flex-wrap md:gap-20 md:justify-center">
-            <div class="w-2/3 max-w-sm bg-white border border-hunter-green rounded-lg shadow-xl">
-                <img src="img/grass-installation.jpg" alt="Grass installation">
-                <h2 class="text-hunter-green font-bold text-center py-3 text-lg">Grass Installation</h2>
-            </div>
-            <div class="w-2/3 max-w-sm bg-white border border-hunter-green rounded-lg shadow-xl">
-                <img src="img/lawn-care.jpg" alt="Lawn Care">
-                <h2 class="text-hunter-green font-bold text-center py-3 text-lg">Lawn Care</h2>
-            </div>
-            <div class="w-2/3 max-w-sm bg-white border border-hunter-green rounded-lg shadow-xl">
-                <img src="img/tree-trimming.jpg" alt="Tree Trimming">
-                <h2 class="text-hunter-green font-bold text-center py-3 text-lg">Tree Trimming</h2>
-            </div>
-            <div class="w-2/3 max-w-sm bg-white border border-hunter-green rounded-lg shadow-xl">
-                <img src="img/branch-removal.jpg" alt="Branch Removal">
-                <h2 class="text-hunter-green font-bold text-center py-3 text-lg">Branch Removal</h2>
-            </div>
-        </section>
+    <main class="flex flex-col items-center pt-12 flex-1">
+        <div class="mb-8">
+            <h2 class="text-4xl text-white">Contact Us</h2>
+        </div>
+        <div class="w-full max-w-xl">
+            <div class="mb-5 bg-red-300 text-md text-center transition ease duration-500" id="error-message"></div>
+            <form class="bg-hunter-green px-8 pt-6 pb-8 mb-4" action="https://api.web3forms.com/submit" method="POST" onsubmit="return validate();">
+                <input type="hidden" name="access_key" value="e13571e0-5e8a-456e-af5d-6b3a9b7a586e">
+              <div class="mb-6">
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" name="Customer-Name" type="text" placeholder="Name">
+              </div>
+              <div class="mb-6">
+                <input class="shadow border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" id="phone" name="Customer-Phone"  type="number" placeholder="Number"> 
+              </div>
+              <div class="mb-6">
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" name="Customer-Email" type="email" placeholder="Email"> 
+              </div>
+              <div>
+                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline min-h-[6rem]" name="Customer-Message" id="message" placeholder="Message"></textarea>
+              </div>
+              <div class="mt-10">
+                <button class="bg-white text-hunter-green font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline block mx-auto" type="submit">
+                  Submit
+                </button>
+              </div>
+
+            </form>
+
+        </div>
     </main>
-    <footer class="bg-white">
+    <footer class="bg-white shadow-lg rounded px-8 pt-6 pb-8">
         <section>
             <address class="flex flex-col text-hunter-green items-center justify-center py-6">
                 <h6 class="font-black text-xl md:text-2xl pb-4">Contact Us</h6>
