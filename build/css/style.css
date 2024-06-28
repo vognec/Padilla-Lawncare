@@ -813,11 +813,27 @@ video {
 }
 
 .bg-call-action {
-  background-image: url('img/grass-action.jpg');
+  background-image: url('/build/img/grass-action.jpg');
 }
 
 .bg-hero-pattern {
+  background-image: url('/build/img/green-grass.jpg');
+}
+
+.bg-\[url\(\'img\/green-grass\.jpg\'\)\] {
   background-image: url('img/green-grass.jpg');
+}
+
+.bg-\[url\(\'build\/img\/green-grass\.jpg\'\)\] {
+  background-image: url('build/img/green-grass.jpg');
+}
+
+.bg-\[url\(\'\.\.\/img\/green-grass\.jpg\'\)\] {
+  background-image: url('../img/green-grass.jpg');
+}
+
+.bg-\[url\(\'\.\.\/img\/grass-action\.jpg\'\)\] {
+  background-image: url('../img/grass-action.jpg');
 }
 
 .bg-cover {
